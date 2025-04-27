@@ -6,6 +6,7 @@ use std::collections::hash_map::DefaultHasher;
 use std::hash::{Hash, Hasher};
 
 /// ---------------------  your custom hash  ---------------------
+/// Ref: https://github.com/viktorleis/vmcache/blob/5a04fd6eaf32a25ec60c7db3093275893ff21bbb/vmcache.cpp#L166-L179
 #[inline(always)]
 fn tiny_murmur(mut k: u64) -> u64 {
     const M: u64 = 0xc6a4a7935bd1e995;
